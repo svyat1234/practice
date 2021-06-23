@@ -17,15 +17,7 @@
         display: flex
         align-items: center
         flex-wrap: wrap
-    &__img
-        width: 370px
-        height: 250px
-        &-1
-            background: url('../img/firm.jpg') no-repeat center / cover
-        &-2
-            background: url('../img/machine.jpg') no-repeat center / cover
-        &-3
-            background: url('../img/ofice.jpg') no-repeat center / cover
+
 
     &__content
         max-width: 1100px
@@ -43,6 +35,15 @@
         flex-direction: column
         margin-top: 50px
         margin-bottom: 50px
+        &__img
+            width: 370px
+            height: 250px
+            &-1
+                background: url('../img/firm.jpg') no-repeat center / cover
+            &-2
+                background: url('../img/machine.jpg') no-repeat center / cover
+            &-3
+                background: url('../img/ofice.jpg') no-repeat center / cover
     &__img
         position: relative
         max-width: 600px
@@ -56,24 +57,6 @@
             align-items: center
             max-width: 600px
             margin: auto
-    &__navigation
-        display: flex
-        flex-direction: column
-        position: fixed
-        top: 0
-        left: 0
-        margin-left: 100px
-        margin-top: 210px
-        &__link
-            position: relative
-            font-size: 22px
-            text-decoration: none
-            color: $basic
-            font-weight: 500
-            margin-bottom: 30px
-            transition: all 0.2s
-            &:hover
-                color: $excretion
             // &::before
             //     position: absolute
             //     content: ''

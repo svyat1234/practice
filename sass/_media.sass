@@ -1,0 +1,396 @@
+@media screen and ( max-width: 1250px )
+    .container
+        max-width: 950px
+    .footer
+        &__nav
+            max-width: 600px
+        &__button
+            width: 130px
+            font-size: 12px
+            padding: 10px 0
+    .firm
+        &__info
+            &__img
+                width: 330px
+        &__img
+            max-width: 500px
+@media screen and ( max-width: 992px  )
+    .container
+        max-width: 800px
+    .header
+        &__link
+            &::before
+                display: none
+        &__nav
+            max-width: 630px
+            &__block
+                max-width: 630px
+    .hero
+        &__link
+            &:hover
+                box-shadow: 0 0 0
+        &__button
+            &:hover
+                box-shadow: 0 0 0
+    .about
+        &__card
+            max-width: 45%
+            width: 100%
+            &:hover
+                transform: scale(1)
+            &__img
+                max-width: 100%
+                min-height: 200px
+            &__title
+                font-size: 20px
+            &__text
+                font-size: 16px
+        &__button
+            &:hover
+                box-shadow: 0 0 0
+
+    .attendance
+        &__block
+            flex-direction: column
+        &__info
+            &:not(:last-child)
+                margin-bottom: 30px
+        &__button
+            &:hover
+                box-shadow: 0 0 0
+    .objectives
+        &__cards
+            flex-direction: column
+        &__card
+            margin-bottom: 30px
+            &__title
+                margin-bottom: 10px
+        &__button
+            &:hover
+                box-shadow: 0 0 0
+    .check
+        &__button
+            &:hover
+                box-shadow: 0 0 0
+    .questions
+        &__button
+            &:hover
+                box-shadow: 0 0 0
+    .footer
+        &__block
+            flex-direction: column
+        &__logo
+            &__info
+                margin-bottom: 10px
+        &__nav
+            margin-bottom: 10px
+        &__link
+            &:hover
+                color: $light
+        &__phone
+            &:hover
+                color: $light
+        &__button
+            &:hover
+                box-shadow: 0 0 0
+    .contacts
+        &__content
+            &__link
+                &:hover
+                    color: $dark
+        &__button
+            &:hover
+                box-shadow: 0 0 0
+        
+    .firm
+        &__info
+            &__img
+                width: 266px
+                height: 220px
+    .hero-slider .slick-arrow
+        &:hover
+            border-color: #ffffff80
+@media screen and ( max-width: 830px  )
+    .container
+        max-width: 700px
+    .header
+        &__nav
+            display: none
+            &__block
+                width: 30px
+                height: 30px
+                background-color: $light
+                background: url('../img/burger.png') no-repeat center
+                background-size: 100% 
+                &:hover>.header__nav
+                    position: fixed
+                    display: flex
+                    top: 0
+                    right: 0
+                    flex-direction: column
+                    justify-content: center
+                    max-width: 250px
+                    padding-left: 20px
+                    min-height: 400px
+                    background-color: $basic
+                    border-bottom: 2px solid $excretion
+                    border-left: 2px solid $excretion
+                    font-size: 20px
+        &__link
+            margin-bottom: 15px
+            &::after
+                display: none
+            &::before
+                display: none
+                width: 0
+            &:hover
+                &::before
+                    display: none
+                    width: 0
+    .active .header__link 
+        color: $light
+        font-weight: normal
+                
+    .hero-slider .slick-arrow.slick-next
+        margin-right: 20px
+    .hero-slider .slick-arrow.slick-prev
+        margin-left: 20px
+    .firm
+        &__images
+            flex-direction: column
+        &__info
+            &__img
+                width: 400px
+                height: 200px
+                margin-bottom: 20px
+    .contacts
+        &__content
+            &__form
+                width: 450px
+@media screen and ( max-width: 760px )
+    .container
+        max-width: 550px
+    .hero
+        &__title
+            font-size: 40px
+    .questions
+        margin: 0
+        &__heading
+            height: auto
+        &__animated
+            position: relative
+            margin: 0
+            animation: none
+            text-align: center
+            max-width: 100%
+            width: 100%
+            background-color: transparent
+            display: flex
+            flex-direction: column
+            margin: auto
+            color: $light
+            padding: 0 10px
+            &-2
+                display: none
+        &__title
+            margin: 0
+            margin-bottom: 10px
+            &::before
+                display: none
+        &__text
+            font-size: 22px
+    .services
+        &__list
+            text-align: left
+    .tasks
+        &__item
+            margin-bottom: 15px
+    .control
+        &__block
+            flex-direction: column
+        &__card
+            &:not(:last-child)
+                margin-bottom: 40px
+    .contacts
+        &__input
+            width: 170px
+        &__content
+            &__links
+                &__block
+                    display: flex
+                    flex-direction: column
+            &__form
+                width: 360px
+    .map
+        min-height: 340px
+        max-height: 340px
+        overflow: hidden
+    .footer
+        &__block
+            align-items: center
+        &__nav
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            max-width: 180px
+            width: 100%
+@media screen and ( max-width: 620px )
+    .container
+        max-width: 400px
+    .hero
+        &__title
+            font-size: 34px
+        &__buttons
+            flex-direction: column
+            align-items: center
+        &__button
+            margin-top: 20px
+            line-height: 1.5
+    .about
+        &__cards
+            flex-direction: column
+        &__card
+            max-width: 100%
+    .section
+        &__title
+            line-height: 1
+    .firm
+        &__img
+            max-width: 400px
+    .contacts
+        &__block
+            flex-direction: column
+        &__content
+            margin-bottom: 30px
+            &__links
+                display: flex
+                flex-direction: initial
+                justify-content: space-between
+                flex-wrap: wrap
+                &__block
+                    flex-basis: 40% 
+@media screen and ( max-width: 430px )
+    .container
+        max-width: 300px
+    .header
+        &__link
+            font-size: 16px
+        &__logo
+            &__img
+                width: 50px
+                height: 40px
+                background-size: 97%
+    .header__nav__block:hover > .header__nav
+        max-width: 200px
+        min-height: 330px
+    .logo
+        width: 50px
+        height: 40px
+        &__img
+            width: 50px
+            height: 40px
+            background-size: 97% 
+    .hero
+        &__title
+            font-size: 25px
+        &__link
+            font-size: 16px
+        &__button
+            font-size: 16px
+    .section
+        &__title
+            font-size: 40px
+    .about
+        &__info
+            margin-top: 20px
+            font-size: 20px
+        &__info
+            font-size: 19px
+        &__text
+            margin-top: 20px
+    .hero-slider .slick-arrow
+        width: 15px
+        height: 15px
+        &:hover
+            border-color: #ffffff80
+    .attendance
+        padding: 50px 0
+        &__text
+            font-size: 19px
+    .objectives
+        padding: 50px 0
+        &__card
+            &__info
+                &__text
+                    font-size: 19px
+            &__title
+                font-size: 22px
+    .check
+        padding: 50px 0
+        &__info
+            font-size: 19px
+    .questions
+        &__heading
+            margin-bottom: 30px
+        &__title
+            font-size: 30px
+        &__text
+            font-size: 19px
+    .footer
+        &__logo
+            &__img
+                width: 50px
+                height: 40px
+                background-size: 97%
+    .services
+        &__info
+            font-size: 22px
+        &__list
+            font-size: 19px
+    .tasks
+        &__content
+            &__title
+                font-size: 22px
+        &__list
+            font-size: 19px
+    .control
+        &__heading
+            margin-bottom: 30px
+        &__info
+            font-size: 19px
+        &__card
+            &__img
+                min-height: 250px
+            &__text
+                font-size: 19px
+    .firm
+        &__heading
+            &__text
+                font-size: 20px
+        &__info
+            &__img
+                width: 300px
+                margin-bottom: 10px
+        &__text
+            font-size: 19px
+        &__img
+            max-width: 100%
+            width: 100%
+    .contacts
+        &__content
+            &__form
+                max-width: 100%
+                width: 100%
+        &__form
+            &__acquaintance
+                display: flex
+                flex-direction: column
+            &__input
+                &:not(:last-child)
+                    margin-bottom: 20px
+        &__input
+            max-width: 100%
+            width: 100%
+    .map
+        min-height: 250px
+        max-height: 250px
