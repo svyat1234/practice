@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  new WOW().init(); 
     $('.hero-slider').slick({
         speed: 2000,
         autoplay: true,
@@ -171,8 +172,21 @@ $(document).ready(function(){
       }
     });
 
+    
+    
     $('[type=tel]').mask('+7(000) 000-00-00');
-    });
+  });
+  if (!localStorage.theme) localStorage.theme = "light"
+  document.body.className = localStorage.theme 
+  
+  toggleThemeBtn.onclick = () => {
+    document.body.classList.toggle("dark")
+    localStorage.theme = document.body.className || "light"
+  }
+
+  // if (!localStorage.theme) localStorage.theme = "light"
+  // document.body.className = localStorage.theme 
+  
     // $('#onIntro').on('click', function(e){
     //     $('html,body').stop().animate({ scrollTop: $('#toIntro').offset().top - 100}, 1000);
     //     e.preventDefault();

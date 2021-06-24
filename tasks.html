@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Решаемые задачи | АО Навигационное оборудование</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="sass/style.css">
     <link rel="icon" href="img/logo.png">
 </head>
@@ -28,6 +29,7 @@
                     <!-- /.nav header__nav -->
                 </div>
                 <!-- /.header__nav__block -->
+                <button id="toggleThemeBtn">Да-да</button>
             </div>
             <!-- /.header__block -->
         </div>
@@ -36,9 +38,9 @@
     <!-- /.header -->
     <section class="tasks">
         <div class="container">
-            <h1 class="section__title tasks__title">Решаемые задачи</h1>
+            <h1 class="section__title tasks__title wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">Решаемые задачи</h1>
             <div class="tasks__content">
-                <div class="tasks__block">
+                <div class="tasks__block wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
                     <h2 class="tasks__content__title">Конструкторская подготовка производства (КПП):</h2>
                     <div class="tasks__content__img"></div>
                     <ul class="tasks__list">
@@ -55,7 +57,7 @@
                     <!-- /.tasks__list -->
                 </div>
                 <!-- /.tasks__block -->
-                <div class="tasks__block">
+                <div class="tasks__block wow animate__animated animate__fadeIn" data-wow-delay="0.6s">
                     <h2 class="tasks__content__title">Технологическая подготовка производства (ТПП):</h2>
                     <div class="tasks__content__img"></div>
                     <ul class="tasks__list">
@@ -68,7 +70,7 @@
                     <!-- /.tasks__list -->
                 </div>
                 <!-- /.tasks__block -->
-                <div class="tasks__block">
+                <div class="tasks__block wow animate__animated animate__fadeIn" data-wow-delay="0.8s">
                     <h2 class="tasks__content__title">Механообработка:</h2>
                     <div class="tasks__content__img"></div>
                     <ul class="tasks__list">
@@ -110,5 +112,8 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

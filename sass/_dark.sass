@@ -1,0 +1,61 @@
+
+// * > body.dark *
+//     transition: all 0.2s ease-in-out
+
+body.dark
+    background: url('../img/bg-dark.jpg') center 
+    background-size: 100%
+body.dark .section__title
+    color: $excretion
+body.dark .section
+    color: $light
+body.dark .active
+    background-color: #00184d
+    color: $light
+body.dark .active .header__link 
+    color: $light
+    font-weight: bold
+body.dark .header
+    &__main
+        background-color: $darkTheme
+    &__logo
+        transition: all 0.5s
+        height: 50px
+        width: 60px
+        &__img
+            background: url('../img/logo.png') no-repeat center 
+            background-size: 100%
+            width: 60px
+            height: 50px
+            transition: all 0.5s
+            &-active
+                background: url('../img/logo.png') no-repeat center 
+                background-size: 100%
+                width: 60px
+                height: 50px
+body.dark .about
+    &__card
+        background-color: $dark
+        &__title
+            color: $excretion
+body.dark .section-dark
+    background-color: $darkTheme
+body.dark .objectives__card
+    &__title
+        color: $excretion
+    &__info
+        &__text
+            color: $light            
+body.dark .footer
+    background-color: $darkTheme
+body.dark .hero
+    &-slider
+        &__item
+            &::before
+                background: rgba(0, 0, 0, 0.25)
+            &-1
+                background: url('../img/spares.jpg') no-repeat center / cover
+            &-2
+                background: url('../img/assembly.jpg') no-repeat center / cover
+            &-3
+                background: url('../img/trainer.jpg') no-repeat center / cover

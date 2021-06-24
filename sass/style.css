@@ -8,6 +8,7 @@
 
 body {
   background: url("../img/bg.jpg") center;
+  background-size: 100%;
   font-family: Roboto;
   line-height: 1.5;
 }
@@ -238,11 +239,6 @@ body {
 }
 
 .active .header__link {
-  color: #005190;
-  font-weight: bold;
-}
-
-.active .header__logo {
   color: #005190;
   font-weight: bold;
 }
@@ -1544,6 +1540,96 @@ body {
 .modal__button:hover {
   -webkit-box-shadow: 0 5px 10px rgba(0, 81, 144, 0.5);
           box-shadow: 0 5px 10px rgba(0, 81, 144, 0.5);
+}
+
+body.dark {
+  background: url("../img/bg-dark.jpg") center;
+  background-size: 100%;
+}
+
+body.dark .section__title {
+  color: #03d1ff;
+}
+
+body.dark .section {
+  color: #ffffff;
+}
+
+body.dark .active {
+  background-color: #00184d;
+  color: #ffffff;
+}
+
+body.dark .active .header__link {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+body.dark .header__main {
+  background-color: #01236d;
+}
+
+body.dark .header__logo {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 50px;
+  width: 60px;
+}
+
+body.dark .header__logo__img {
+  background: url("../img/logo.png") no-repeat center;
+  background-size: 100%;
+  width: 60px;
+  height: 50px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body.dark .header__logo__img-active {
+  background: url("../img/logo.png") no-repeat center;
+  background-size: 100%;
+  width: 60px;
+  height: 50px;
+}
+
+body.dark .about__card {
+  background-color: #000000;
+}
+
+body.dark .about__card__title {
+  color: #03d1ff;
+}
+
+body.dark .section-dark {
+  background-color: #01236d;
+}
+
+body.dark .objectives__card__title {
+  color: #03d1ff;
+}
+
+body.dark .objectives__card__info__text {
+  color: #ffffff;
+}
+
+body.dark .footer {
+  background-color: #01236d;
+}
+
+body.dark .hero-slider__item::before {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+body.dark .hero-slider__item-1 {
+  background: url("../img/spares.jpg") no-repeat center/cover;
+}
+
+body.dark .hero-slider__item-2 {
+  background: url("../img/assembly.jpg") no-repeat center/cover;
+}
+
+body.dark .hero-slider__item-3 {
+  background: url("../img/trainer.jpg") no-repeat center/cover;
 }
 
 @media screen and (max-width: 1250px) {

@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АО Навигационное оборудование</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="sass/style.css">
     <link rel="icon" href="img/logo.png">
 </head>
 <body>
-    <header class="header main__header">
+    <header class="header main__header wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
         <div class="container">
             <div class="header__block">
                 <a href="index.html" class="logo">
@@ -28,6 +29,7 @@
                     <!-- /.nav header__nav -->
                 </div>
                 <!-- /.header__nav__block -->
+                <button id="toggleThemeBtn">Да-да</button>
             </div>
             <!-- /.header__block -->
         </div>
@@ -39,10 +41,10 @@
             <div class="hero-slider__item hero-slider__item-3">
                 <div class="container">
                     <div class="hero__heading">
-                        <h1 class="hero__title">Производство тренажёров для лётного состава и их частей.</h1>
+                        <h1 class="hero__title wow animate__animated animate__fadeIn" data-wow-delay="0.6s">Производство тренажёров для лётного состава и их частей.</h1>
                         <div class="hero__buttons">
-                            <a href="firm.html" class="hero__link">Узнать подробнее</a>
-                            <button class="hero__button" data-toggle="modal">Сделать заказ</button>
+                            <a href="firm.html" class="hero__link wow animate__animated animate__fadeInRight" data-wow-delay="1s">Узнать подробнее</a>
+                            <button class="hero__button wow animate__animated animate__fadeInRight" data-wow-delay="1.3s" data-toggle="modal">Сделать заказ</button>
                         </div>
                         <!-- /.hero__buttons -->
                     </div>
@@ -88,40 +90,40 @@
     <section class="section about">
         <div class="container">
             <div class="about__heading">
-                <h2 class="section__title about__title">Чем мы занимаемся?</h2>
-                <span class="about__info">Основной сферой деятельности компании является авиационно-космическая промышленность. Основной вид деятельности: научные исследования и разработки в области естественных и технических наук. Компания очень успешно зарекомендовала себя в области бортовой авионики, систем радионавигации, их комплексированию, вычислительной техники, электронной индикации.
+                <h2 class="section__title about__title wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">Чем мы занимаемся?</h2>
+                <span class="about__info wow animate__animated animate__fadeIn" data-wow-delay="0.4s">Основной сферой деятельности компании является авиационно-космическая промышленность. Основной вид деятельности: научные исследования и разработки в области естественных и технических наук. Компания очень успешно зарекомендовала себя в области бортовой авионики, систем радионавигации, их комплексированию, вычислительной техники, электронной индикации.
                 </span>
             </div>
             <!-- /.about__heading -->
             <span class="about__text">Мы работаем в следующих направлениях:</span>
                 <div class="about__cards">
-                    <div class="about__card">
+                    <div class="about__card wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
                         <div class="about__card__img about__card__img-1"></div>
                         <h3 class="about__card__title">Проектирование</h3>
                         <p class="about__card__text">Создание технического проекта, исследования и расчёты изделия, создание технической документации.</p>
                     </div>
-                    <div class="about__card">
+                    <div class="about__card wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" >
                         <div class="about__card__img about__card__img-2"></div>
                         <h3 class="about__card__title">Конструкторская документация:</h3>
                         <p class="about__card__text">Создание комплекта графических и текстовых документов, чертежей и схем изделия.</p>
                     </div>
-                    <div class="about__card">
+                    <div class="about__card wow animate__animated animate__fadeInUp" data-wow-delay="0.6s" >
                         <div class="about__card__img about__card__img-3"></div>
                         <h3 class="about__card__title">Программирование</h3>
                         <p class="about__card__text">Использование современного программного обеспечения и оборудования.
                         </p>
                     </div>
-                    <div class="about__card">
+                    <div class="about__card wow animate__animated animate__fadeInUp" data-wow-delay="0.8s" >
                         <div class="about__card__img about__card__img-4"></div>
                         <h3 class="about__card__title">Изготовление изделий</h3>
                         <p class="about__card__text">Современное оборудование, металлообработка, лазерная резка, гибка, сварка.</p>
                     </div>
-                    <div class="about__card">
+                    <div class="about__card wow animate__animated animate__fadeInUp" data-wow-delay="1s" >
                         <div class="about__card__img about__card__img-5"></div>
                         <h3 class="about__card__title">Сборка</h3>
                         <p class="about__card__text">Использование приспособлений, специальных инструментов и шаблонов, разработанных индивидуально под каждое изделие.</p>
                     </div>
-                    <div class="about__card">
+                    <div class="about__card wow animate__animated animate__fadeInUp" data-wow-delay="1.2s" >
                         <div class="about__card__img about__card__img-6"></div>
                         <h3 class="about__card__title">Контроль качества:</h3>
                         <p class="about__card__text">Современные стенды для проверки работы изделия в условиях, максимально приближённых к реальным </p>
@@ -135,8 +137,8 @@
     <!-- /.about -->
     <section class="section-dark attendance">
         <div class="container">
-            <h2 class="section__title attendance__title">Услуги</h2>
-            <div class="attendance__block">
+            <h2 class="section__title attendance__title wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">Услуги</h2>
+            <div class="attendance__block wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
                 <div class="attendance__info">
                     <span class="attendance__text">Модернизация бортового оборудования летательных аппаратов в целях расширения их функциональных возможностей в соответствии с требованиями заказчика</span>
                 </div>
@@ -158,8 +160,8 @@
     <!-- /.attendance -->
     <div class="objectives">
         <div class="container">
-            <h2 class="section__title objectives__title">Решаемые задачи</h2>
-            <div class="objectives__cards">
+            <h2 class="section__title objectives__title wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">Решаемые задачи</h2>
+            <div class="objectives__cards wow animate__animated animate__fadeIn" data-wow-delay="0.4s"">
                 <div class="objectives__card">
                     <h3 class="objectives__card__title">Конструкторская подготовка производства (КПП):</h3>
                     <div class="objectives__card__info">
@@ -197,8 +199,8 @@
     <!-- /.objectives -->
     <section class="section-dark check">
         <div class="container">
-            <h2 class="section__title check__title">Средства контроля</h2>
-            <span class="check__info">Во время изготовления любой продукции изготовитель должен производить промежуточный контроль качества. Помимо обычного измерительного инструмента, такого как штангенциркуль, штангенрейсмус, глибиномер, проходные и резьбовые пробки, на предприятии для этого используется современное оборудование.</span>
+            <h2 class="section__title check__title wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">Средства контроля</h2>
+            <span class="check__info wow animate__animated animate__fadeIn" data-wow-delay="0.4s">Во время изготовления любой продукции изготовитель должен производить промежуточный контроль качества. Помимо обычного измерительного инструмента, такого как штангенциркуль, штангенрейсмус, глибиномер, проходные и резьбовые пробки, на предприятии для этого используется современное оборудование.</span>
             <a href="control.html" class="check__button">Подробнее</a>
         </div>
         <!-- /.container -->
@@ -291,12 +293,6 @@
       </div>
       <!-- /.modal -->
     <!-- /.footer -->
-    <!-- <script>
-        window.replainSettings = { id: '3855d98d-f456-45e8-9b20-161f3f2f38f7' };
-        (function(u){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=u;
-        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-        })('https://widget.replain.cc/dist/client.js');
-        </script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/slick.min.js"></script>
