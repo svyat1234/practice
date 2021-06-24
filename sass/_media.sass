@@ -110,6 +110,10 @@
     .hero-slider .slick-arrow
         &:hover
             border-color: #ffffff80
+    .modal
+        &__close
+            &:hover
+                opacity: 0.5
 @media screen and ( max-width: 830px  )
     .container
         max-width: 700px
@@ -269,6 +273,19 @@
                 flex-wrap: wrap
                 &__block
                     flex-basis: 40% 
+    .modal
+        &__dialog
+            max-width: 400px
+            text-align: center
+        &__title
+            font-size: 25px
+            margin-bottom: 30px
+        &__input
+            min-height: 45px
+            &-group
+                margin-bottom: 20px
+        &__policy
+            margin-bottom: 20px
 @media screen and ( max-width: 430px )
     .container
         max-width: 300px
@@ -394,3 +411,10 @@
     .map
         min-height: 250px
         max-height: 250px
+    .modal
+        &__dialog
+            max-width: 300px
+            padding: 25px
+        &__close
+            width: 15px
+            height: 15px

@@ -42,7 +42,7 @@
                         <h1 class="hero__title">Производство тренажёров для лётного состава и их частей.</h1>
                         <div class="hero__buttons">
                             <a href="firm.html" class="hero__link">Узнать подробнее</a>
-                            <button class="hero__button">Сделать заказ</button>
+                            <button class="hero__button" data-toggle="modal">Сделать заказ</button>
                         </div>
                         <!-- /.hero__buttons -->
                     </div>
@@ -57,7 +57,7 @@
                     <h1 class="hero__title">Поставка авиационных материалов и металлопродукции</h1>
                     <div class="hero__buttons">
                         <a href="firm.html" class="hero__link">Узнать подробнее</a>
-                        <button class="hero__button">Сделать заказ</button>
+                        <button class="hero__button" data-toggle="modal">Сделать заказ</button>
                     </div>
                     <!-- /.hero__buttons -->
                   </div>
@@ -72,7 +72,7 @@
                         <h1 class="hero__title">Ремонт и модернизация авиационной техники и агрегатов</h1>
                         <div class="hero__buttons">
                             <a href="firm.html" class="hero__link">Узнать подробнее</a>
-                            <button class="hero__button">Сделать заказ</button>
+                            <button class="hero__button" data-toggle="modal">Сделать заказ</button>
                         </div>
                         <!-- /.hero__buttons -->
                     </div>
@@ -98,32 +98,33 @@
                     <div class="about__card">
                         <div class="about__card__img about__card__img-1"></div>
                         <h3 class="about__card__title">Проектирование</h3>
-                        <p class="about__card__text">Поставка авиационной техники и запасных частей</p>
+                        <p class="about__card__text">Создание технического проекта, исследования и расчёты изделия, создание технической документации.</p>
                     </div>
                     <div class="about__card">
                         <div class="about__card__img about__card__img-2"></div>
-                        <h3 class="about__card__title">Составление чертежей</h3>
-                        <p class="about__card__text">Поставка авиационных материалов и металлопродукции</p>
-                    </div>
-                    <div class="about__card">
-                        <div class="about__card__img about__card__img-4"></div>
-                        <h3 class="about__card__title">Программирование</h3>
-                        <p class="about__card__text">вертолетный центр «Ермолино» дада, текст</p>
+                        <h3 class="about__card__title">Конструкторская документация:</h3>
+                        <p class="about__card__text">Создание комплекта графических и текстовых документов, чертежей и схем изделия.</p>
                     </div>
                     <div class="about__card">
                         <div class="about__card__img about__card__img-3"></div>
-                        <h3 class="about__card__title">Изготовление запчастей</h3>
-                        <p class="about__card__text">Ремонт и модернизация авиационной техники и агрегатов</p>
+                        <h3 class="about__card__title">Программирование</h3>
+                        <p class="about__card__text">Использование современного программного обеспечения и оборудования.
+                        </p>
                     </div>
                     <div class="about__card">
                         <div class="about__card__img about__card__img-4"></div>
+                        <h3 class="about__card__title">Изготовление изделий</h3>
+                        <p class="about__card__text">Современное оборудование, металлообработка, лазерная резка, гибка, сварка.</p>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__card__img about__card__img-5"></div>
                         <h3 class="about__card__title">Сборка</h3>
-                        <p class="about__card__text">вертолетный центр «Ермолино» дада, текст</p>
+                        <p class="about__card__text">Использование приспособлений, специальных инструментов и шаблонов, разработанных индивидуально под каждое изделие.</p>
                     </div>
                     <div class="about__card">
-                        <div class="about__card__img about__card__img-4"></div>
-                        <h3 class="about__card__title">Тестирование</h3>
-                        <p class="about__card__text">вертолетный центр «Ермолино» дада, текст</p>
+                        <div class="about__card__img about__card__img-6"></div>
+                        <h3 class="about__card__title">Контроль качества:</h3>
+                        <p class="about__card__text">Современные стенды для проверки работы изделия в условиях, максимально приближённых к реальным </p>
                     </div>
                 </div>
                 <a href="firm.html" class="button about__button">Подробнее</a>
@@ -227,8 +228,8 @@
                     <input type="text" name="userEmail" placeholder="Ваша почта:" class="questions__input">
                 </div>
                 <div class="questions__policy">
-                    <input type="checkbox" name="policyChekbox" id="policy-chekbox" class="questions__checkbox" checked>
-                    <label for="policy-chekbox" class="questions__label">Я соглашаюсь с обработкой данных</label>
+                    <input type="checkbox" name="policyChekbox" id="policy-chekbox-questions" class="questions__checkbox" checked>
+                    <label for="policy-chekbox-questions" class="questions__label">Я соглашаюсь с обработкой данных</label>
                 </div>
                 <!-- /.policy -->
                 <button class="questions__button">Отправить заявку</button>
@@ -255,7 +256,7 @@
                 <!-- /.footer__nav -->
                 <div class="footer__contacts">
                     <a href="tel:79299299292" class="footer__phone">+79299299292</a>
-                    <button class="footer__button">Заказать звонок</button>
+                    <button class="footer__button" data-toggle="modal">Заказать звонок</button>
                 </div>
                 <!-- /.footer__contacts -->
             </div>
@@ -263,6 +264,32 @@
         </div>
         <!-- /.container -->
     </footer>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__close"></div>
+            <h3 class="modal__title">Оставьте заявку, наш менеджер свяжется с вами уже через 5 минут!</h3>
+            <form action="send.php" method="POST" class="modal__form">
+                <div class="input-group modal__input-group">
+                    <input type="text" name="userName" class="input form__input modal__input" id="user-name" placeholder="Имя">
+                </div>
+                <div class="input-group modal__input-group">
+                    <input type="tel" name="userPhone" class="input form__input modal__input" id="user-phone" placeholder="Телефон">
+                </div>
+                <div class="input-group modal__input-group">
+                    <input type="email" name="userEmail" class="input form__input modal__input" id="user-email" placeholder="Email:">
+                </div>
+                <div class="policy modal__policy">
+                    <input type="checkbox" name="policyChekbox" id="policy-chekbox" class="modal__checkbox" checked>
+                    <label for="policy-chekbox" class="modal__label">Я соглашаюсь с обработкой данных</label>
+                </div>
+                <!-- /.policy -->
+                <button class="button button__primary modal__button">Отправить заявку</button>
+            </form>
+            <!-- /.modal__form -->
+        </div>
+        <!-- /.modal__dialog -->
+      </div>
+      <!-- /.modal -->
     <!-- /.footer -->
     <!-- <script>
         window.replainSettings = { id: '3855d98d-f456-45e8-9b20-161f3f2f38f7' };
@@ -271,7 +298,10 @@
         })('https://widget.replain.cc/dist/client.js');
         </script> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
