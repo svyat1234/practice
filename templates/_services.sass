@@ -1,0 +1,47 @@
+.services
+    position: relative
+    padding-top: 100px
+    padding-bottom: 100px
+    &::before
+       position: absolute
+       content: ''
+       height: 100%
+       width: 100%
+       left: 0
+       top: 0
+    &__heading
+        position: relative
+    &__title
+        position: relative
+        color: $basic
+    &__info
+        display: flex
+        margin-top: 30px
+        font-size: 24px
+        font-weight: bold
+    &__list
+        position: relative
+        font-size: 20px
+        text-align: justify
+        margin-top: 10px
+    &__item
+        position: relative
+        width: 100%
+        &:not(:last-child)
+            margin-bottom: 40px            
+
+        // &::before
+        //     position: absolute
+        //     content: ''
+        //     bottom: 0
+        //     left: 0
+        //     margin-top: -70px
+        //     display: flex
+        //     width: 0
+        //     height: 3px
+        //     background-color: rgba($basic, 1)
+        //     transition: all 0.2s
+        // &:hover
+        //     &::before
+        //         width: 20%
+
