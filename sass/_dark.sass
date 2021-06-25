@@ -4,7 +4,6 @@
 
 body.dark
     background: url('../img/bg-dark.jpg') center 
-    background-size: 100%
 body.dark .section__title
     color: $excretion
 body.dark .section
@@ -123,3 +122,17 @@ body.dark .questions
         left: 0
         display: flex
         background-color: rgba(0, 0, 0, 0.8)
+body.dark .modal
+    &__dialog
+        background: url('../img/bg-dark.jpg') center
+    &__title
+        color: $excretion
+    &__label
+        color: $light
+    &__input
+        background-color: $dark
+        &::placeholder
+            color: $light 
+    &__close
+        background: url('../img/close-light.png') no-repeat center
+        background-size: 100% 

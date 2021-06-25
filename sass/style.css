@@ -8,7 +8,6 @@
 
 body {
   background: url("../img/bg.jpg") center;
-  background-size: 100%;
   font-family: Roboto;
   line-height: 1.5;
 }
@@ -1574,7 +1573,6 @@ body {
 
 body.dark {
   background: url("../img/bg-dark.jpg") center;
-  background-size: 100%;
 }
 
 body.dark .section__title {
@@ -1780,6 +1778,43 @@ body.dark .questions::before {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+body.dark .modal__dialog {
+  background: url("../img/bg-dark.jpg") center;
+}
+
+body.dark .modal__title {
+  color: #03d1ff;
+}
+
+body.dark .modal__label {
+  color: #ffffff;
+}
+
+body.dark .modal__input {
+  background-color: #000000;
+}
+
+body.dark .modal__input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+body.dark .modal__input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+body.dark .modal__input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+body.dark .modal__input::placeholder {
+  color: #ffffff;
+}
+
+body.dark .modal__close {
+  background: url("../img/close-light.png") no-repeat center;
+  background-size: 100%;
+}
+
 @media screen and (max-width: 1250px) {
   .header__content {
     max-width: 750px;
@@ -1936,6 +1971,9 @@ body.dark .questions::before {
   .modal__close:hover {
     opacity: 0.5;
   }
+  body.dark .modal__close {
+    opacity: 1;
+  }
   #toggleThemeBtn:hover {
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -1997,6 +2035,12 @@ body.dark .questions::before {
   .header__link:hover::before {
     display: none;
     width: 0;
+  }
+  body.dark .header__nav {
+    display: none;
+  }
+  body.dark .header__nav__block:hover > .header__nav {
+    background-color: #01236d;
   }
   .active .header__link {
     color: #ffffff;
@@ -2212,9 +2256,28 @@ body.dark .questions::before {
   .modal__policy {
     margin-bottom: 20px;
   }
+  .modal__input-group label.invalid {
+    position: absolute;
+    color: tomato;
+    margin-top: 45px;
+  }
+  .modal__policy label.invalid {
+    position: absolute;
+    color: tomato;
+    margin-top: 40px;
+    margin-left: -13px;
+  }
 }
 
 @media screen and (max-width: 430px) {
+  body {
+    background: url("../img/bg.jpg") center;
+    background-size: 400%;
+  }
+  body.dark {
+    background: url("../img/bg-dark.jpg") center;
+    background-size: 400%;
+  }
   .container {
     max-width: 300px;
   }
