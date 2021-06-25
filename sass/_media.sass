@@ -1,4 +1,11 @@
 @media screen and ( max-width: 1250px )
+    .header
+        &__content
+            max-width: 750px
+        &__nav
+            max-width: 650px
+            &__block
+                max-width: 650px
     .container
         max-width: 950px
     .footer
@@ -21,6 +28,8 @@
         &__link
             &::before
                 display: none
+        &__content
+            max-width: 690px
         &__nav
             max-width: 630px
             &__block
@@ -114,10 +123,15 @@
         &__close
             &:hover
                 opacity: 0.5
+    #toggleThemeBtn
+        &:hover
+            transform: scale(1)
 @media screen and ( max-width: 830px  )
     .container
         max-width: 700px
     .header
+        &__content
+            max-width: 80px
         &__nav
             display: none
             &__block

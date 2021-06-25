@@ -16,7 +16,7 @@ body.dark .active .header__link
     color: $light
     font-weight: bold
 body.dark .header
-    &__main
+    &__dark
         background-color: $darkTheme
     &__logo
         transition: all 0.5s
@@ -59,3 +59,57 @@ body.dark .hero
                 background: url('../img/assembly.jpg') no-repeat center / cover
             &-3
                 background: url('../img/trainer.jpg') no-repeat center / cover
+body.dark #toggleThemeBtn
+    width: 25px
+    height: 25px
+    background: url('../img/moon.png') center
+    background-size: 100%
+    border: none
+    cursor: pointer
+body.dark .services
+    &__info
+        color: $excretion
+    &__list
+        color: $light
+
+body.dark .tasks
+    &__content
+        &__title
+            color: $excretion
+    &__list
+        color: $light
+body.dark .control
+    &__info
+        color: $light
+    &__card
+        color: $light
+        &__text-bold
+            color: $excretion
+
+body.dark .firm
+    &__heading
+        &__text
+            color: $excretion
+    &__text
+        color: $light
+        &-bold
+            color: $excretion
+    &__img__info
+        color: $light
+body.dark .contacts
+    &__content
+        color: $light
+        &__link
+            color: $light
+    &__input
+        background-color: $dark
+        border: 2px solid $dark
+        color: $light
+        &::placeholder
+            color: $light
+        &__text
+            background-color: $dark
+            border: 2px solid $dark
+            color: $light
+            &::placeholder
+                color: $light
