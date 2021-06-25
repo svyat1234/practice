@@ -1586,7 +1586,7 @@ body.dark .section {
 }
 
 body.dark .active {
-  background-color: #00184d;
+  background-color: #01236d;
   color: #ffffff;
 }
 
@@ -1780,6 +1780,9 @@ body.dark .contacts__input__text::placeholder {
   .container {
     max-width: 950px;
   }
+  .about__card {
+    max-width: 30%;
+  }
   .footer__nav {
     max-width: 600px;
   }
@@ -1823,6 +1826,7 @@ body.dark .contacts__input__text::placeholder {
   .about__card {
     max-width: 45%;
     width: 100%;
+    min-height: 470px;
   }
   .about__card:hover {
     -webkit-transform: scale(1);
@@ -2133,6 +2137,7 @@ body.dark .contacts__input__text::placeholder {
   }
   .about__card {
     max-width: 100%;
+    min-height: 350px;
   }
   .section__title {
     line-height: 1;
@@ -2194,6 +2199,18 @@ body.dark .contacts__input__text::placeholder {
     font-size: 16px;
   }
   .header__logo__img {
+    width: 50px;
+    height: 40px;
+    background-size: 97%;
+  }
+  body.dark .header__link {
+    font-size: 16px;
+  }
+  body.dark .header__logo {
+    width: 50px;
+    height: 40px;
+  }
+  body.dark .header__logo__img {
     width: 50px;
     height: 40px;
     background-size: 97%;

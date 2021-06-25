@@ -8,6 +8,9 @@
                 max-width: 650px
     .container
         max-width: 950px
+    .about
+        &__card
+            max-width: 30%
     .footer
         &__nav
             max-width: 600px
@@ -45,6 +48,7 @@
         &__card
             max-width: 45%
             width: 100%
+            min-height: 470px
             &:hover
                 transform: scale(1)
             &__img
@@ -269,6 +273,7 @@
             flex-direction: column
         &__card
             max-width: 100%
+            min-height: 350px
     .section
         &__title
             line-height: 1
@@ -307,6 +312,16 @@
         &__link
             font-size: 16px
         &__logo
+            &__img
+                width: 50px
+                height: 40px
+                background-size: 97%
+    body.dark .header
+        &__link
+            font-size: 16px
+        &__logo
+            width: 50px
+            height: 40px
             &__img
                 width: 50px
                 height: 40px
