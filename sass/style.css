@@ -453,6 +453,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
+  font-size: 22px;
 }
 
 .about__cards {
